@@ -2,8 +2,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:zuukafood/screens/account.dart';
-import 'package:zuukafood/screens/car_items_screen.dart';
-import 'package:zuukafood/screens/cuppons.dart';
 import 'package:zuukafood/screens/tabs_screen.dart';
 import '../sidebar/menu_item.dart';
 
@@ -70,7 +68,7 @@ class _SideBarState extends State<SideBar>
               Expanded(
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
-                  color: Colors.purple,
+                  color: Colors.orange,
                   child: Column(
                     children: <Widget>[
                       SizedBox(

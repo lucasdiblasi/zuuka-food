@@ -30,6 +30,9 @@ class _TabsScreenState extends State<TabsScreen> {
       appBar: AppBar(
         title: Text(
           _screens[_selectedScreenIndex]['title'],
+          style: TextStyle(
+            color: Colors.white
+            ),
         ),
          brightness: Brightness.light,
         actions:<Widget>[

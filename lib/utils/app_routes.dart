@@ -1,5 +1,7 @@
+
 class AppRoutes {
   static const HOME = '/';
+  static const TabsScreen = '/tab';
   static const CART = '/cart';
   static const MYACCOUNT = '/account';
   static const CLIENT = '/client';

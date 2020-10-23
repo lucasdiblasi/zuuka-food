@@ -24,8 +24,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   carousel_pro: ^1.0.0
-  flutter_bloc: ^2.1.1
-  splashscreen: ^1.2.0
+  flutter_bloc: ^3.0.0
+  flutter_credit_card_detector: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -92,8 +92,8 @@ flutter:
     - assets/images/bestfood/ic_best_food_10.jpeg
     - assets/images/menus/PIX.png
     - assets/images/menus/PIX.jpg
-    - assets/images/tenor.gif
     - assets/images/menus/Cards.png
+    - assets/images/menus/pandafood.gif
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

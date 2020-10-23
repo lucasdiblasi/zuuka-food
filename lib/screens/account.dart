@@ -85,7 +85,7 @@ class MyAccountsPage extends StatelessWidget with NavigationStates {
               children: <Widget>[
               RaisedButton(
                  child: Text('Salvar'),
-                 color: Colors.purple,           
+                 color: Colors.orange,           
                  textColor: Colors.white,   
                  onPressed: (){},
                       ),

@@ -47,7 +47,7 @@ class MealItem extends StatelessWidget {
                   bottom: 20,
                     child: Container(
                     width: 300,
-                    color: Colors.black54,
+                    color: Colors.white,
                     padding: EdgeInsets.symmetric(
                       vertical: 5,
                       horizontal: 20,

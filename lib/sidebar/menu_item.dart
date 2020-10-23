@@ -17,7 +17,7 @@ class MenuItem extends StatelessWidget {
           children: <Widget>[
             Icon(
               icon,
-              color: Colors.purple[200],
+              color: Colors.orange,
               size: 30,
             ),
             SizedBox(
