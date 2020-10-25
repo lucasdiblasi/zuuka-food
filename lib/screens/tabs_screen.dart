@@ -28,6 +28,9 @@ class _TabsScreenState extends State<TabsScreen> {
   Widget build(BuildContext contex) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(
+            color: Colors.white, //change your color here
+          ),
         title: Text(
           _screens[_selectedScreenIndex]['title'],
           style: TextStyle(

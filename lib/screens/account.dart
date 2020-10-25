@@ -8,7 +8,12 @@ class MyAccountsPage extends StatelessWidget with NavigationStates {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Minha Conta'),
+        iconTheme: IconThemeData(
+            color: Colors.white, //change your color here
+          ),
+        title: Text('Minha Conta',
+        style: TextStyle(color: Colors.white)
+        ),
         ),
       body: Padding(
       padding: const EdgeInsets.all(8.0),

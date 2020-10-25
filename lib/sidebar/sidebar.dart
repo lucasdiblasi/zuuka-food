@@ -2,6 +2,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:zuukafood/screens/account.dart';
+import 'package:zuukafood/screens/car_items_screen.dart';
+import 'package:zuukafood/screens/configurations.dart';
 import 'package:zuukafood/screens/tabs_screen.dart';
 import '../sidebar/menu_item.dart';
 
@@ -110,10 +112,10 @@ class _SideBarState extends State<SideBar>
                       ),
                       MenuItem(
                         icon: Icons.shopping_basket,
-                        title: "Meus Pedidos",
+                        title: "Configurações",
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (BuildContext context) => TabsScreen()));
+                              builder: (BuildContext context) => Configurations()));
                         },
                       ),
                       MenuItem(

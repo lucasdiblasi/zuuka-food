@@ -7,7 +7,12 @@ class AddPix extends StatelessWidget with NavigationStates {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Adicionar PIX'),
+        iconTheme: IconThemeData(
+            color: Colors.white, //change your color here
+          ),
+        title: Text('Adicionar PIX',
+        style: TextStyle(color: Colors.white)
+        ),
         ),
     );
   }

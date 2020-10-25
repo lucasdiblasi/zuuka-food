@@ -15,6 +15,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.orange,
         accentColor: Colors.orangeAccent[200],
         fontFamily: 'Roboto',
+        iconTheme: IconThemeData(
+            color: Colors.white, //change your color here
+          ),
         textTheme: ThemeData.light().textTheme.copyWith(
           headline1: TextStyle( 
             fontSize: 20,

@@ -1,30 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:zuukafood/screens/welcome_screen.dart';
+import 'package:zuukafood/widgets/text_field_signup.dart';
 
-class SignUp extends StatelessWidget {
- Widget textField({
-   @required String hintText,
- }) {
-   return TextFormField(
-            decoration: InputDecoration( 
-              hintText: hintText,
-              hintStyle: TextStyle( 
-                color: Colors.white
-              ),
-              enabledBorder: UnderlineInputBorder( 
-                borderSide: BorderSide( 
-                  color: Colors.white
-                )
-              )
-            ),
-          );
- }
+class SignUp extends StatefulWidget {
+ @override
+ _SignUpState createState() => _SignUpState();
+}
+class _SignUpState extends State<SignUp> {
+GlobalKey<ScaffoldState> globalKey = GlobalKey<ScaffoldState>();
 
  Widget button({
    @required String buttonName,
    @required Color color,
-   @required textColor,
-   @required onPressed
+   @required Color textColor,
+   @required Function onPressed
  }) {
    return Container(
                    width: 130,
@@ -51,6 +40,7 @@ class SignUp extends StatelessWidget {
 @override  
 Widget build(BuildContext context) {
   return Scaffold(
+    key: globalKey,
     backgroundColor: Colors.orange,
     body: SafeArea(
     child: Container(
@@ -70,18 +60,31 @@ Widget build(BuildContext context) {
               child: Column( 
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-          textField(
-              hintText:"Nome",
+          MyTextFieldSignUp(
+            hintText: 'Nome',
+            obscureText: false,
           ),
-          textField(
-              hintText:"E-mail" 
+          MyTextFieldSignUp(
+              hintText:"E-mail" ,
+              obscureText: false,
           ),
-          textField(
-              hintText:"Senha" 
+          MyTextFieldSignUp(
+              hintText:"Endereço" ,
+              obscureText: false,
           ),
-          textField(
-              hintText:"Confirme Sua Senha" 
+          MyTextFieldSignUp(
+              hintText:"Telefone",
+              obscureText: false,
           ),
+          MyTextFieldSignUp(
+              hintText:"Senha",
+              obscureText: true,
+          ),
+          MyTextFieldSignUp(
+              hintText:"Confirme Sua Senha",
+              obscureText: true,
+          ),
+          
                 ],
               ),
             ),

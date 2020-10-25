@@ -14,7 +14,12 @@ class AddCard extends StatelessWidget with NavigationStates {
         ],
         child: Scaffold(
             appBar: AppBar(
-              title: Text('Incluir Cartão'),
+              iconTheme: IconThemeData(
+            color: Colors.white, //change your color here
+          ),
+              title: Text('Incluir Cartão',
+              style: TextStyle(color: Colors.white)
+              ),
               backgroundColor: Colors.orange,
             ),
             body: CreditCardWidget(onTap: _onTap,

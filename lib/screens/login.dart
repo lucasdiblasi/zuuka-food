@@ -6,9 +6,11 @@ class Login extends StatelessWidget {
   Widget textField({
     @required String hintText,
     @required IconData icon,
-    @required Color iconColor
+    @required Color iconColor,
+    @required bool obscureText
   }){
     return TextFormField(
+              style: TextStyle(color: Colors.white),
               decoration: InputDecoration(  
                 prefixIcon: Icon(icon, color:iconColor),
                 hintText: hintText,
@@ -20,6 +22,7 @@ class Login extends StatelessWidget {
                     color: Colors.white)
                 ),
               ),
+              obscureText: obscureText
             );
   }
   @override 
@@ -58,15 +61,17 @@ class Login extends StatelessWidget {
           Column(  
             children: [
               textField(
-                hintText: "Nome de Usuário/E-mail",
+                hintText: "E-mail",
                 icon: Icons.person_outline,
-                iconColor: Colors.white
+                iconColor: Colors.white,
+                obscureText: false
               ),
               SizedBox(height: 30,),
               textField(
                 hintText: "Senha",
                 icon: Icons.lock_outline,
-                iconColor: Colors.white
+                iconColor: Colors.white,
+                obscureText: true
               ),          
             ],
           ),
