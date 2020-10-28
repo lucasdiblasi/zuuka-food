@@ -1,30 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:zuukafood/screens/tabs_screen.dart';
 import 'package:zuukafood/screens/welcome_screen.dart';
+import 'package:zuukafood/widgets/text_field_signup.dart';
 
 class Login extends StatelessWidget {
-  Widget textField({
-    @required String hintText,
-    @required IconData icon,
-    @required Color iconColor,
-    @required bool obscureText
-  }){
-    return TextFormField(
-              style: TextStyle(color: Colors.white),
-              decoration: InputDecoration(  
-                prefixIcon: Icon(icon, color:iconColor),
-                hintText: hintText,
-                hintStyle: TextStyle(
-                  color: Colors.white
-                ),
-                enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(
-                    color: Colors.white)
-                ),
-              ),
-              obscureText: obscureText
-            );
-  }
+  // Widget textField({
+  //   @required String hintText,
+  //   @required IconData icon,
+  //   @required Color iconColor,
+  //   @required bool obscureText
+  // }){
+  //   return TextFormField(
+  //             style: TextStyle(color: Colors.white),
+  //             decoration: InputDecoration(  
+  //               prefixIcon: Icon(icon, color:iconColor),
+  //               hintText: hintText,
+  //               hintStyle: TextStyle(
+  //                 color: Colors.white
+  //               ),
+  //               enabledBorder: UnderlineInputBorder(
+  //                 borderSide: BorderSide(
+  //                   color: Colors.white)
+  //               ),
+  //             ),
+  //             obscureText: obscureText
+  //           );
+  // }
   @override 
   Widget build(BuildContext context) {
     return Scaffold( 
@@ -60,19 +61,29 @@ class Login extends StatelessWidget {
             ),
           Column(  
             children: [
-              textField(
-                hintText: "E-mail",
-                icon: Icons.person_outline,
-                iconColor: Colors.white,
-                obscureText: false
+              MyTextFieldSignUp(
+                obscureText: false,
+                hintText: 'E-mail',
+                controller: null,
               ),
+         //     textField(
+         //       hintText: "E-mail",
+         //       icon: Icons.person_outline,
+         //       iconColor: Colors.white,
+         //       obscureText: false
+         //     ),
               SizedBox(height: 30,),
-              textField(
-                hintText: "Senha",
-                icon: Icons.lock_outline,
-                iconColor: Colors.white,
-                obscureText: true
-              ),          
+              MyTextFieldSignUp(
+                obscureText: true,
+                hintText: 'Senha',
+                controller: null,
+              )
+         //     textField(
+         //       hintText: "Senha",
+         //       icon: Icons.lock_outline,
+         //       iconColor: Colors.white,
+         //       obscureText: true
+         //     ),          
             ],
           ),
           Container(

@@ -1,4 +1,4 @@
-#Sun Oct 25 11:01:55 BRT 2020
+#Tue Oct 27 09:19:34 BRT 2020
 base.0=/home/lucas/Documents/git/zuuka-food/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
