@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:zuukafood/screens/welcome_screen.dart';
 import 'package:zuukafood/widgets/text_field_signup.dart';
@@ -10,7 +11,7 @@ class SignUp extends StatefulWidget {
  _SignUpState createState() => _SignUpState();
 }
 class _SignUpState extends State<SignUp> {
-  
+  UserCredential userCredential;
   RegExp regExp = RegExp(SignUp.pattern);
   TextEditingController name = TextEditingController();
   TextEditingController email = TextEditingController();
@@ -23,14 +24,30 @@ GlobalKey<ScaffoldState> globalKey = GlobalKey<ScaffoldState>();
 
 Future sendData() async{
   
- await  FirebaseFirestore.instance.collection('userData').doc().set({
- 'Nome':name.text,
- 'E-mail':email.text,
- 'Endereço':address.text,
- 'Telefone':phone.text,
- 'Senha':passwd.text,
- 'Confime Sua Senha':confirmpasswd.text
-  });
+try {
+  userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
+    email: email.text,
+    password: passwd.text
+  );
+     await FirebaseFirestore.instance.collection('userData').doc(userCredential.user.uid).set({
+          'userid':userCredential.user.uid,
+          'Nome':name.text.trim(),
+          'E-mail':email.text.trim(),
+          'Endereço':address.text.trim(),
+          'Telefone':phone.text.trim(),
+          'Senha':passwd.text.trim(),
+          'Confime a Senha':confirmpasswd.text.trim()
+
+        });
+} on FirebaseAuthException catch (e) {
+  if (e.code == 'Senha fraca') {
+    globalKey.currentState.showSnackBar(SnackBar(content: Text("A senha fornecida é muito fraca."),),);
+  } else if (e.code == 'email-already-in-use') {
+    globalKey.currentState.showSnackBar(SnackBar(content: Text("A conta já existe para esse e-mail."),),);
+  }
+} catch (e) {
+  globalKey.currentState.showSnackBar(SnackBar(content: Text(e),),);
+}
 }
 
 
@@ -97,6 +114,9 @@ Future sendData() async{
       );
       return;
     }
+    else {
+      sendData();
+      }
   }
 
 
