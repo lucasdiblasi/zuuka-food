@@ -212,10 +212,6 @@
         "source": "/home/lucas/.gradle/caches/transforms-2/files-2.1/05bba5a22f1fb20b730fb8c473e5665f/play-services-base-17.1.0/res/drawable/common_google_signin_btn_icon_disabled.xml"
     },
     {
-        "merged": "/home/lucas/Documents/git/zuuka-food/build/app/intermediates/res/merged/debug/layout-v16_notification_template_custom_big.xml.flat",
-        "source": "/home/lucas/.gradle/caches/transforms-2/files-2.1/cc05cbb20248c793dee14f7d6605fdfb/core-1.1.0/res/layout-v16/notification_template_custom_big.xml"
-    },
-    {
         "merged": "/home/lucas/Documents/git/zuuka-food/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "/home/lucas/.gradle/caches/transforms-2/files-2.1/cc05cbb20248c793dee14f7d6605fdfb/core-1.1.0/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
     },
@@ -248,10 +244,6 @@
         "source": "/home/lucas/.gradle/caches/transforms-2/files-2.1/cc05cbb20248c793dee14f7d6605fdfb/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
     },
     {
-        "merged": "/home/lucas/Documents/git/zuuka-food/build/app/intermediates/res/merged/debug/layout_notification_action.xml.flat",
-        "source": "/home/lucas/.gradle/caches/transforms-2/files-2.1/cc05cbb20248c793dee14f7d6605fdfb/core-1.1.0/res/layout/notification_action.xml"
-    },
-    {
         "merged": "/home/lucas/Documents/git/zuuka-food/build/app/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/home/lucas/Documents/git/zuuka-food/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
@@ -260,20 +252,12 @@
         "source": "/home/lucas/.gradle/caches/transforms-2/files-2.1/cc05cbb20248c793dee14f7d6605fdfb/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
     },
     {
-        "merged": "/home/lucas/Documents/git/zuuka-food/build/app/intermediates/res/merged/debug/layout_notification_template_icon_group.xml.flat",
-        "source": "/home/lucas/.gradle/caches/transforms-2/files-2.1/cc05cbb20248c793dee14f7d6605fdfb/core-1.1.0/res/layout/notification_template_icon_group.xml"
-    },
-    {
         "merged": "/home/lucas/Documents/git/zuuka-food/build/app/intermediates/res/merged/debug/drawable-v21_notification_action_background.xml.flat",
         "source": "/home/lucas/.gradle/caches/transforms-2/files-2.1/cc05cbb20248c793dee14f7d6605fdfb/core-1.1.0/res/drawable-v21/notification_action_background.xml"
     },
     {
         "merged": "/home/lucas/Documents/git/zuuka-food/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
         "source": "/home/lucas/.gradle/caches/transforms-2/files-2.1/05bba5a22f1fb20b730fb8c473e5665f/play-services-base-17.1.0/res/drawable-xxhdpi-v4/googleg_standard_color_18.png"
-    },
-    {
-        "merged": "/home/lucas/Documents/git/zuuka-food/build/app/intermediates/res/merged/debug/layout_notification_action_tombstone.xml.flat",
-        "source": "/home/lucas/.gradle/caches/transforms-2/files-2.1/cc05cbb20248c793dee14f7d6605fdfb/core-1.1.0/res/layout/notification_action_tombstone.xml"
     },
     {
         "merged": "/home/lucas/Documents/git/zuuka-food/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_googleg_disabled_color_18.png.flat",
